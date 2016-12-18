@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+    -webkit-user-select: none;
+}
+
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+}
+
+main, #brick {
+    width: inherit;
+    height: inherit;
+}
+
+#brick, #controller {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+}
+
+header {
+    flex-basis: 100%;
+    padding-left: 1.5em;
+    background-color: #2C001E;
+    color: white;
+    margin-bottom: .5em;
+}
+
+#controller {
+    flex-grow: 1;
+}
+
+#connect {
+    order: 1;
+}
+
+#up {
+    order: 2;
+}
+
+#left, #stop, #right {
+    order: 3;
+    flex-basis: 33.333%
+}
+
+#down {
+    order: 4;
+}
+
+#connect, #up, #down {
+    flex-basis: 100%;
+}
+
+.button {
+    background-color: #eb6536;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.button-disabled {
+    filter: opacity(40%);
+    cursor: not-allowed;
+}
+
+.brick-disconnected {
+    filter: opacity(20%) blur(3px);
+}

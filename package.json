@@ -1,0 +1,31 @@
+{
+    "name": "brick-controller",
+    "productName": "Brick Controller",
+    "version": "0.1.1",
+    "description": "Desktop app for driving Lego Mindstorms EV3 brick's tacho motors developed with Electron and React",
+    "repository": "hiseni/brick-controller",
+    "main": "bootstrap.js",
+    "scripts": {
+        "app": "electron .",
+        "rebuild": "electron-rebuild ."
+    },
+    "keywords": [
+        "ev3",
+        "lego",
+        "mindstorms"
+    ],
+    "author": "Bogdan Arabadzhi <bogdan.today@gmail.com>",
+    "license": "MIT",
+    "devDependencies": {
+        "electron": "^1.4.6",
+        "electron-rebuild": "^1.3.0"
+    },
+    "dependencies": {
+        "babel-preset-es2015": "^6.18.0",
+        "babel-preset-react": "^6.16.0",
+        "babel-register": "^6.18.0",
+        "ffi": "^2.2.0",
+        "react": "^15.3.2",
+        "react-dom": "^15.3.2"
+    }
+}
